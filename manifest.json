@@ -1,0 +1,9 @@
+{
+  "name": "S1K Finish Time Calculator",
+  "short_name": "S1K Calc",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#111",
+  "description": "Enhanced S1K finish time calculator",
+  "icons": []
+}

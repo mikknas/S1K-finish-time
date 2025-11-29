@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S1K Finish Time Calculator</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+}
+</script>
+</head>
+<body>
+
+<h2>S1K Finish Time Calculator</h2>
+
+<div class="container">
+    <label>Laps Remaining</label>
+    <input id="laps" type="number">
+
+    <label>Avg Lap Time (seconds)</label>
+    <input id="lapTime" type="number">
+
+    <label>Pit Stops Remaining</label>
+    <input id="pits" type="number">
+
+    <label>Pit Stop Duration (seconds)</label>
+    <input id="pitDuration" type="number">
+
+    <label>Current Time (HH:MM)</label>
+    <input id="currentTime" type="text">
+
+    <button onclick="calculate()">Calculate</button>
+    <button class="reset" onclick="resetForm()">Reset</button>
+
+    <p id="resultTime"></p>
+    <p id="resultFinish"></p>
+</div>
+
+<button class="toggle" onclick="toggleDark()">Toggle Night Mode</button>
+
+<script src="script.js"></script>
+</body>
+</html>
